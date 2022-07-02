@@ -55,8 +55,8 @@
             </ListBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Background="#FF1B1B5F" Margin="0,338,0,0" Grid.RowSpan="2" Orientation="Horizontal">
-            <Image x:Name="myMusicsOne" MouseDown="myMusicsOne_MouseDown" Width="50" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\music-document-song-audio-png-icon-free-516795.png"></Image>
-            <Image x:Name="mykeyDownPer" MouseDown="mykeyDownPer_MouseDown" Width="50" Margin="10,0,0,0" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg" RenderTransformOrigin="0.5,0.5">
+            <Image x:Name="myMusicsOne" MouseDown="myMusicsOne_MouseDown" Width="50" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\music-document-song-audio-png-icon-free-516795.png"></Image>
+            <Image x:Name="mykeyDownPer" MouseDown="mykeyDownPer_MouseDown" Width="50" Margin="10,0,0,0" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg" RenderTransformOrigin="0.5,0.5">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleX="-1"/>
@@ -66,8 +66,8 @@
                     </TransformGroup>
                 </Image.RenderTransform>
             </Image>
-            <Image x:Name="myPleyMus" MouseDown="myPleyMus_MouseDown" Margin="15,0,0,0" Width="50" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"></Image>
-            <Image x:Name="myForward" MouseDown="myForward_MouseDown"  Margin="15,0,0,0" Width="50" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg"></Image>
+            <Image x:Name="myPleyMus" MouseDown="myPleyMus_MouseDown" Margin="15,0,0,0" Width="50" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"></Image>
+            <Image x:Name="myForward" MouseDown="myForward_MouseDown"  Margin="15,0,0,0" Width="50" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg"></Image>
         </StackPanel>
     </Grid>
 </Window>

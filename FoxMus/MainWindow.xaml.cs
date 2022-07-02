@@ -52,7 +52,7 @@ namespace FoxMus
         }
         private void MusicsOne_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Views.MusicOne Mus = new Views.MusicOne();
+            Views.MusicOne Mus = new Views.MusicOne(musiscMy.PathMusic, MediaMusic.Position, PlaylistDay);
             Mus.Show();
         }
         private void PleyMus_MouseDown(object sender, MouseButtonEventArgs e)
@@ -60,12 +60,12 @@ namespace FoxMus
             switch (countPley)
             {
                 case 0:
-                    PleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
+                    PleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
                     countPley++;
                     MediaMusic.Pause();
                     break;
                 case 1:
-                    PleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"));
+                    PleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"));
                     countPley--;
                     MediaMusic.Play();
                     break;

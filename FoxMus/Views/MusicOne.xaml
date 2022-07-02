@@ -10,8 +10,8 @@
         <MediaElement HorizontalAlignment="Left" LoadedBehavior="Manual" x:Name="MediaMus" Height="100" Margin="335,138,0,0" VerticalAlignment="Top" Width="100"/>
         <Label Name="lblStatus" Content="Not playing..." HorizontalContentAlignment="Center" Margin="177,265,177,129" FontSize="22" Foreground="White" />
         <Image Source="{Binding ImageMus}" Margin="231,20,229,178"></Image>
-        <Image x:Name="Forward" MouseDown="Forward_MouseDown" Margin="413,321,337,63" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg" Stretch="Fill" Width="50" Height="50"/>
-        <Image x:Name="keyDown" MouseDown="keyDown_MouseDown" Margin="223,321,527,63" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg" Stretch="Fill" Height="50" RenderTransformOrigin="0.5,0.5" Width="50">
+        <Image x:Name="Forward" MouseDown="Forward_MouseDown" Margin="413,321,337,63" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg" Stretch="Fill" Width="50" Height="50"/>
+        <Image x:Name="keyDown" MouseDown="keyDown_MouseDown" Margin="223,321,527,63" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg" Stretch="Fill" Height="50" RenderTransformOrigin="0.5,0.5" Width="50">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -21,7 +21,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image x:Name="Volume" MouseDown="Volume_MouseDown" Margin="523,321,227,63" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\iGrom.jpg" Stretch="Fill" Width="50"  Height="50"/>
-        <Image x:Name="Pause" MouseDown="Pause_MouseDown" Margin="324,321,426,63" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg" Stretch="Fill" Width="50" Height="50"/>
+        <Image x:Name="Volume" MouseDown="Volume_MouseDown" Margin="523,321,227,63" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\iGrom.jpg" Stretch="Fill" Width="50"  Height="50"/>
+        <Image x:Name="Pause" MouseDown="Pause_MouseDown" Margin="324,321,426,63" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg" Stretch="Fill" Width="50" Height="50"/>
     </Grid>
 </Window>

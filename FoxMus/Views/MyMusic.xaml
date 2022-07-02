@@ -21,7 +21,9 @@
         </StackPanel>
         <StackPanel Grid.Column="0" Background="#FF373784" Grid.ColumnSpan="2" Margin="0,233,562,0" Grid.RowSpan="2"/>
         <StackPanel Grid.Column="2" Grid.Row="0" Background="#FF7171AD"></StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="1" Background="#FF7171AD"></StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1" Background="#FF7171AD">
+            <Button Content="Назад" Margin="5,150,5,0" x:Name="Exsit" Click="Exsit_Click"/>
+        </StackPanel>
         <Image Grid.Column="2" Margin="1,98,0,149" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\360-3607399_and-more-secure-to-pay-on-apps-and.png" Stretch="Fill" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -72,8 +74,8 @@
                 </ListBox.ItemTemplate>
             </ListBox>
                 <StackPanel Grid.Row="1" Orientation="Horizontal">
-                    <Image x:Name="myMusicsOne" MouseDown="myMusicsOne_MouseDown" Width="60" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\music-document-song-audio-png-icon-free-516795.png"></Image>
-                    <Image x:Name="mykeyDownPer" MouseDown="mykeyDownPer_MouseDown" Width="60" Margin="10,0,0,0" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg" RenderTransformOrigin="0.5,0.5">
+                    <Image x:Name="myMusicsOne" MouseDown="myMusicsOne_MouseDown" Width="60" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\music-document-song-audio-png-icon-free-516795.png"></Image>
+                    <Image x:Name="mykeyDownPer" MouseDown="mykeyDownPer_MouseDown" Width="60" Margin="10,0,0,0" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform ScaleX="-1"/>
@@ -83,8 +85,8 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Image x:Name="myPleyMus" MouseDown="myPleyMus_MouseDown" Margin="10,0,0,0" Width="60" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"></Image>
-                    <Image x:Name="myForward" MouseDown="myForward_MouseDown" Margin="10,0,0,0" Width="60" Source="C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\imager.jpg"></Image>
+                    <Image x:Name="myPleyMus" MouseDown="myPleyMus_MouseDown" Margin="10,0,0,0" Width="60" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"></Image>
+                    <Image x:Name="myForward" MouseDown="myForward_MouseDown" Margin="10,0,0,0" Width="60" Source="C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\imager.jpg"></Image>
                 </StackPanel>
             </Grid>
         </StackPanel>

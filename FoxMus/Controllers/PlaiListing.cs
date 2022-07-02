@@ -12,7 +12,7 @@ namespace FoxMus.Controllers
         public static List<MusicClass> plaiListMy()
         {
             List<MusicClass> list = new List<MusicClass>();
-            string pathFull = @"C:\Users\poc18\source\repos\FoxMus\FoxMus\MusicFull";
+            string pathFull = @"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\MusicFull";
             string[] allfiles = Directory.GetFiles(pathFull);
             int i = 0;
             foreach (string filename in allfiles)

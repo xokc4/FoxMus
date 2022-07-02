@@ -23,10 +23,13 @@ namespace FoxMus.Views
     {
         int countPley = 0;
         public static List<MusicClass> musics = new List<MusicClass>();
-        public MusicOne()
+        public MusicOne(string PathMus, TimeSpan position, List<MusicClass> music)
         {
             InitializeComponent();
-            MediaMus.Source = new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\MusicFull\ATL_-_Gori_yasno_47828860.mp3");
+            musics = music;
+            MediaMus.Source = new Uri(PathMus);
+            MediaMus.Position = position;
+            MediaMus.Play();
         }
         private void Forward_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -43,12 +46,12 @@ namespace FoxMus.Views
             switch (countPley)
             {
                 case 0:
-                    Pause.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
+                    Pause.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
                     countPley++;
                     MediaMus.Pause();
                     break;
                 case 1:
-                    Pause.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"));
+                    Pause.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"));
                     countPley--;
                     MediaMus.Play();
                     break;

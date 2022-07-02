@@ -40,7 +40,6 @@ namespace FoxMus.Views
             musisc = music;
             MymuGlopal = Mymusics;
             MyMusicMedia.Play();
-
         }
 
         private void myPleyMus_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -48,12 +47,12 @@ namespace FoxMus.Views
             switch (countPley)
             {
                 case 0:
-                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
+                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
                     countPley++;
                     MyMusicMedia.Pause();
                     break;
                 case 1:
-                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"));
+                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"));
                     countPley--;
                     MyMusicMedia.Play();
                     break;
@@ -78,7 +77,6 @@ namespace FoxMus.Views
                     case 1:
                         myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"));
                         countPley--;
-                        
                         break;
                     default:
                         break;
@@ -96,6 +94,7 @@ namespace FoxMus.Views
                 MyMusicMedia.Source = new Uri(musicClass[0].PathMusic);
                 musisc = musicClass[0];
                 MyMusicMedia.Play();
+                
                 switch (countPley)
                 {
                     case 1:
@@ -113,8 +112,14 @@ namespace FoxMus.Views
 
         private void myMusicsOne_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            MusicOne one = new MusicOne();
+            MusicOne one = new MusicOne(musisc.PathMusic, MyMusicMedia.Position,MymuGlopal);
             one.Show();
+            MyMusicMedia.Stop();
+        }
+
+        private void Exsit_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

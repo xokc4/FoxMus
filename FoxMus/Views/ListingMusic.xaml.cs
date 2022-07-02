@@ -36,12 +36,12 @@ namespace FoxMus.Views
             switch (countPley)
             {
                 case 0:
-                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
+                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\iPleybutton.jpg"));
                     countPley++;
                     MediaMusic.Pause();
                     break;
                 case 1:
-                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\FoxMus\FoxMus\ImageForm\ipause.jpg"));
+                    myPleyMus.Source = new BitmapImage(new Uri(@"C:\Users\poc18\source\repos\xokc4\FoxMus\FoxMus\ImageForm\ipause.jpg"));
                     countPley--;
                     MediaMusic.Play();
                     break;
@@ -97,7 +97,7 @@ namespace FoxMus.Views
 
         private void myMusicsOne_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MusicOne one = new MusicOne();
+            MusicOne one = new MusicOne("e", MediaMusic.Position);
             one.Show();
         }
         private void ListMus_MouseDoubleClick(object sender, MouseButtonEventArgs e)
